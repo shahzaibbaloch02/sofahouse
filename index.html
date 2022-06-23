@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link type="text/css" rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sofa House</title>
+  </head>
+
+  <body
+    class="mx-w-[2000px] mx-auto bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100"
+  >
+    <nav class="mx-auto p-4 bg-amber-400">
+      <div class="container mx-auto flex items-center justify-between">
+        <a
+          href="/"
+          class="focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 rounded-sm ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 hover:opacity-80 transition-opacity z-50"
+          aria-label="Go to Home Page"
+        >
+          <img
+            src="./assets/logo.svg"
+            width="200"
+            class="w-16 h-14 md:w-24 md:h-12 lg:w-32 lg:h-16"
+            alt="Logo"
+          />
+        </a>
+
+        <button
+          id="menu"
+          class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 rounded-sm ring-offset-amber-400 text-neutral-900 hover:text-orange-800 transition-colors"
+          aria-expanded="false"
+          aria-label="Open Menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <div
+          role="menubar"
+          class="hidden flex-col gap-4 absolute right-0 left-0 z-40 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full"
+        >
+          <a
+            role="menuitem"
+            class="py-1 px-6 dark:text-neutral-900 text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 rounded-sm ring-offset-amber-400 hover:text-orange-800 transition-colors"
+            href="/"
+            >Home</a
+          >
+          <a
+            role="menuitem"
+            class="py-1 px-6 dark:text-neutral-900 text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 rounded-sm ring-offset-amber-400 hover:text-orange-800 transition-colors lg:mr-auto"
+            href="/"
+            >Contact</a
+          >
+          <a
+            role="menuitem"
+            class="py-1 px-6 dark:text-neutral-900 text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 rounded-sm ring-offset-amber-400 hover:text-orange-800 transition-colors"
+            href="/"
+            >Login</a
+          >
+          <a
+            role="menuitem"
+            class="py-2 px-6 bg-orange-800 text-neutral-100 shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 rounded-md ring-offset-amber-400"
+            href="/"
+            >Signup</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative pt-16 md:pt-24 lg:pt-48">
+      <div
+        class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"
+      ></div>
+      <div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+        <img
+          src="./assets/sofa.png"
+          class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto"
+          alt="Sofa"
+        />
+        <img
+          src="./assets/app.svg"
+          class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-56 md:w-60 lg:w-96"
+          alt="App"
+        />
+      </div>
+    </header>
+
+    <main
+      class="grid gap-12 sm:gap-16 md:gap-24 lg:gap-32 px-8 overflow-hidden"
+    >
+      <a
+        href="#"
+        class="py-2 px-6 bg-amber-400 dark:text-neutral-900 shadow-xl mx-auto my-12 flex gap-2 hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 rounded-md ring-offset-white dark:ring-offset-neutral-800 dark:ring-amber-400"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+          />
+        </svg>
+        <span>Download the APP NOW</span>
+      </a>
+      <section aria-labelledby="qualities" class="relative">
+        <!-- <img src="./assets/side.svg" class="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-24 xl:-left-60 md:-left-40" alt="Side Design" aria-hidden="true"> -->
+        <h2 id="qualities" class="sr-only">Our Qualities</h2>
+
+        <div
+          class="container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between"
+        >
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-14 w-14"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Safe</h3>
+            <p>Our Products are secure and private</p>
+          </div>
+
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-14 w-14"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Proven</h3>
+            <p>Leading the smart home world for 10 years</p>
+          </div>
+
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-14 w-14"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Efficency</h3>
+            <p>Feel good about your wallet and environment</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="partners"
+        class="text-center grid gap-8 place-item-center"
+      >
+        <div class="grid gap-4">
+          <h2 id="partners" class="text-4xl font-bold text-amber-400">
+            Our Partners
+          </h2>
+          <p class="w-full max-w-lg lg:max-w-full md:max-w-full sm:max-w-full">
+            We are Partners of 100 of wold wide companies to create a smart home
+            for you.
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap justify-center gap-8 md:gap-x-16 max-w-2xl mx-auto"
+        >
+          <div
+            class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-lg rounded-md"
+          >
+            <img src="./assets/accusoft.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-lg rounded-md"
+          >
+            <img src="./assets/acer.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-lg rounded-md"
+          >
+            <img src="./assets/adidas.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-lg rounded-md"
+          >
+            <img src="./assets/apple.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-lg rounded-md"
+          >
+            <img src="./assets/angular.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-lg rounded-md"
+          >
+            <img src="./assets/anydesk.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-lg rounded-md"
+          >
+            <img src="./assets/atom.svg" class="h-16 w-16" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="home" class="relative">
+        <div class="flex flex-wrap-reverse gap-8 justify-center">
+          <div class="flex flex-wrap gap-6 flex-col items-start lg:justify-center"
+          >
+            <div class="flex flex-wrap flex-col gap-2 items-start">
+              <h2 class="font-bold text-2xl">
+                Relax! You are Home
+              </h2>
+              <p class="max-w-md">
+                All our Products can reach to you very eisily just relax and place an order to decorate your home.
+              </p>
+
+            </div>
+            <a
+              href="#"
+              class="py-2 px-6 bg-amber-400 dark:text-neutral-900 shadow-xl  flex gap-2 hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 rounded-md ring-offset-white dark:ring-offset-neutral-800 dark:ring-amber-400"
+            >
+              Download APP NOW
+            </a>
+          </div>
+          <img src="./assets/table.png" alt="" />
+        </div>
+
+        <div class="absolute -bottom-6 -right-32 aspect-square -z-10 md:border-8 border-amber-400 rounded-full md:w-64 lg:w-96 xl:max-w-lg">
+        </div>
+        <div class="bg-teal-900 -mx-8 mt-12 h-48 xl:absolute w-screen -bottom-8 -z-10 xl:mt-0">
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
